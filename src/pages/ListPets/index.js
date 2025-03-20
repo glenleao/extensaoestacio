@@ -1,23 +1,13 @@
-// import {Routes}  from "./src/routes/routes";
-
-// const App = () => {
-//   return <Routes/>;
-// }
-
-// export default App;
-
 import { useEffect, useState } from "react";
 
-import { Container, TitleList, List, RowData, InfoData, ValueData, BtnView } from "./src/styles/custom_adm";
+import { Container, TitleList, List, RowData, InfoData, ValueData, BtnView } from "../../styles/custom_adm";
 
 // import { MaterialDesignIcons } from "react-native-vector-icons/MaterialDesignIcons";
 import { Alert, ScrollView, TouchableOpacity } from "react-native";
 
-import { api } from "./src/config/api";
+import { api } from "../../config/api";
 
-
-
-const App = () =>{
+export default function ListPets(){
 
   const [pets, setPets] = useState([]);
 
@@ -66,5 +56,3 @@ return (
     
 )
 };
-
-export default App;
